@@ -1,6 +1,7 @@
 {
   "engines": {
-    "composer": "^0.19.4"
+    "composer": "^0.19.4",
+    "node": "^8.11.0"
   },
   "name": "clp-network",
   "version": "0.0.1",

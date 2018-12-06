@@ -1,11 +1,13 @@
 env:
     node: true
     mocha: true
+    es6: true
 extends: 'eslint:recommended'
 parserOptions:
     sourceType:
         - script
-globals: 
+    ecmaVersion: 2017
+globals:
     getFactory: true
     getSerializer: true
     getAssetRegistry: true
@@ -16,7 +18,7 @@ globals:
 rules:
     indent:
         - error
-        - 4
+        - 2
     linebreak-style:
         - error
         - unix
@@ -41,7 +43,7 @@ rules:
     no-with: error
     operator-linebreak: error
     require-jsdoc:
-        - error
+        - off
         - require:
             ClassDeclaration: true
             MethodDefinition: true

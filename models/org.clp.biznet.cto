@@ -34,13 +34,13 @@ participant Partner identified by id {
 transaction EarnPoints {
     o Integer points
     --> Partner partner
-    --> Member member    
+    --> Member member
 }
 
 //points spent
 transaction UsePoints {
     o Integer points
-    --> Partner partner  
+    --> Partner partner
     --> Member member
 }
 
